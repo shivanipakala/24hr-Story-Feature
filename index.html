@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Story Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="story-box">
+  <div class="thumbnails">
+    <label class="upload-circle">
+      <span>+</span>
+      <input type="file" id="fileInput" accept="image/*" hidden />
+    </label>
+    <div id="thumbnails" class="thumbnails-list"></div></div>
+  </div>
+</div>
+
+  </div>
+
+  <div id="viewer" class="viewer">
+    <div class="menu-wrapper bottom-right">
+  <button id="menuBtn" class="menu-btn">⋮</button>
+  <div id="menuOptions" class="menu-options hidden">
+    <button id="deleteBtn" class="menu-item">Delete</button>
+    <button id="shareBtn" class="menu-item">Share</button>
+  </div>
+</div>
+
+
+
+    <div id="progressBars" class="progress-container"></div>
+    <img id="storyImage" class="story-image" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
